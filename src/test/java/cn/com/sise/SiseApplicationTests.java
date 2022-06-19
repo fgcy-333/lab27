@@ -8,6 +8,7 @@ class SiseApplicationTests {
 
     @Test
     void contextLoads() {
+        System.out.println("hot-fix edit");
         System.out.println("master edit");
     }
 
