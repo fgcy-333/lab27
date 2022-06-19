@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--引入thymeleaf-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--<meta charset="UTF-8"/>-->
+    <meta charset="utf-8"/>
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="sidebar">
+    <aside id="sidebar" class="affix">
+        <div id="sidebar-search">
+
+        </div>
+        <div id="sidebar-menu">
+            <ul class="nav sidebar-nav"><h3>教务员后台管理</h3></ul>
+            <ul class="nav sidebar-nav">
+                <li><a th:href="@{officer/toOfficer}"><span
+                        class="glyphicons glyphicon-home"></span><span
+                        class="sidebar-title">教务员管理主页</span></a></li>
+                <li><a th:href="@{/officer/findAllMajors}"><span
+                        class="glyphicons glyphicon-file"></span><span
+                        class="sidebar-title">系别管理</span></a></li>
+                <li><a th:href="@{/officer/findAllMajors}"><span
+                        class="glyphicons glyphicon-paperclip"></span><span
+                        class="sidebar-title">专业管理</span></a></li>
+                <li><a th:href="@{/officer/findAllClasses}"><span
+                        class="glyphicons glyphicon-credit-card"></span><span
+                        class="sidebar-title">班级管理</span></a></li>
+                <li><a th:href="@{/toAllTeachers}"><span
+                        class="glyphicons glyphicon-paperclip"></span><span
+                        class="sidebar-title">教师管理</span></a></li>
+                <li><a th:href="@{/toAllUsers}"><span
+                        class="glyphicons glyphicon-paperclip"></span><span
+                        class="sidebar-title">新生管理</span></a></li>
+                <li><a th:href="@{/toAllChecks}"><span
+                        class="glyphicons glyphicon-paperclip"></span><span
+                        class="sidebar-title">新生证件审核</span></a></li>
+            </ul>
+
+        <ul class="nav sidebar-nav"><h3>新生后台管理</h3></ul>
+            <ul class="nav sidebar-nav">
+                <li><a th:href="@{freshman/toFreshman}">
+                    <span class="glyphicons glyphicon-home"></span>
+                    <span class="sidebar-title">新生主页</span>
+                </a>
+                </li>
+                <li><a th:href="@{officer/findAllMajors}">
+                    <span class="glyphicons glyphicon-file"></span>
+                    <span class="sidebar-title">个人信息管理</span>
+                </a>
+                </li>
+                <li><a th:href="@{toAllChecks}">
+                    <span class="glyphicons glyphicon-paperclip"></span>
+                    <span class="sidebar-title">新生证件上传</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+</div>
+</body>
+</html>

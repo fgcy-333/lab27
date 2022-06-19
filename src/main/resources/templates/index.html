@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--引入thymeleaf-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8"/>
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8">-->
+    <title>后台首页</title>
+    <meta name="keywords" content="Admin"/>
+    <meta name="description" content="Admin"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Core CSS  -->
+    <link rel="stylesheet" type="text/css" th:href="@{css/bootstrap.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/glyphicons.min.css}">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{css/theme.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/responsive.css}">
+
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" type="text/css" th:href="@{css/custom.css}">
+
+    <!-- Core Javascript - via CDN -->
+    <script type="text/javascript" th:href="@{js/jquery.min.js}"></script>
+</head>
+
+<body>
+<!-- Start: Header -->
+<div th:insert="header :: header"></div>
+<!-- End: Header -->
+
+<!-- Start: Main -->
+<div id="main">
+    <!-- Start: Sidebar -->
+    <div th:insert="sidebar :: sidebar"></div>
+    <!-- End: Sidebar -->
+    <!-- Start: Content -->
+    <div th:insert="content :: content"></div>
+    <!-- End: Content -->
+</div>
+<!-- End: Main -->
+</body>
+
+</html>
