@@ -22,5 +22,6 @@ class AuthorityRepositorysTest {
     void findAuthorityByUsername() {
         List<Role> root = authorityRepositorys.findAuthorityByUsername("root");
         root.forEach(System.out::println);
+        System.out.println("sfafsad");
     }
 }
