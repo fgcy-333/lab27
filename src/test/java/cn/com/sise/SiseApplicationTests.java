@@ -10,6 +10,6 @@ class SiseApplicationTests {
     void contextLoads() {
         System.out.println("hot-fix edit");
         System.out.println("master edit");
+        System.out.println("idea push one");
     }
-
 }
