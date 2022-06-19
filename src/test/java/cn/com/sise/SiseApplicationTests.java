@@ -12,6 +12,6 @@ class SiseApplicationTests {
         System.out.println("master edit");
         System.out.println("idea push one");
         System.out.println("idea push two");
-        //git@github.com:fgcy-333/lab27.git
+         System.out.println("edit in github");
     }
 }
