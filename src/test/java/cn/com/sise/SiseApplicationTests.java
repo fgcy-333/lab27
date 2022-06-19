@@ -8,7 +8,7 @@ class SiseApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println("啊啊啊啊啊啊啊啊啊啊啊啊");
+        System.out.println("master edit");
     }
 
 }
